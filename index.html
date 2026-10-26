@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakshi — Software Developer, Data &amp; Research Enthusiast</title>
+<meta name="description" content="Portfolio of Sakshi Tripathi — Software Developer with a Mathematics background and published graph-theory research.">
+<meta name="theme-color" content="#070709">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070709'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' text-anchor='middle' fill='%238B5CF6'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Sakshi<span>.</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+        <svg id="themeIcon" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 3v1.5M12 19.5V21M4.9 4.9l1.1 1.1M18 18l1.1 1.1M3 12h1.5M19.5 12H21M4.9 19.1l1.1-1.1M18 6l1.1-1.1M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#experience">Experience</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="dot-grid" style="height:100%;"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="badge in-up" style="--i:0">OPEN TO OPPORTUNITIES</div>
+      <div class="role in-up" style="--i:1"><i></i>Hi, I'm <b>Sakshi</b> — Software Developer <em>· currently working</em></div>
+      <h1 class="in-up" style="--i:2"><span class="l">Building software.</span><span class="l l2">Exploring research.</span><span class="l l3">Turning data into insight.</span></h1>
+      <p class="hero-desc in-up" style="--i:3">Mathematics graduate with a research background and a strong interest in data analysis, technology and problem solving. Currently working as a Software Developer, with a published paper on graph-theoretic clustering.</p>
+      <div class="btn-row in-up" style="--i:4">
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#research" class="btn btn-secondary">View Research</a>
+        <a href="#contact" class="txt-link">Let's Connect →</a>
+      </div>
+      <div class="availability in-up" style="--i:5"><span class="pulse-dot"></span>Available for internships &amp; entry-level opportunities</div>
+    </div>
+    <div class="hero-art in-up" style="--i:3" aria-hidden="true">
+      <svg viewBox="0 0 420 420" class="pg">
+        <defs><linearGradient id="edgeGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F7BFF"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs>
+        <g class="hv-edge active" stroke="url(#edgeGrad)"><path d="M210 110 L90 270 M210 110 L330 250 M90 270 L330 250 M210 110 L210 200 M90 270 L210 200 M330 250 L210 200"/></g>
+        <g class="hv-edge"><path d="M210 110 L150 40 M210 110 L290 50 M90 270 L40 350 M90 270 L40 200 M330 250 L380 330 M330 250 L390 190 M210 200 L200 340 M90 270 L150 370"/></g>
+        <g class="hub"><circle cx="210" cy="110" r="30"/><circle cx="90" cy="270" r="30"/><circle cx="330" cy="250" r="30"/></g>
+        <circle class="hv-node-pulse" cx="210" cy="110" r="30"/><circle class="hv-node-pulse" cx="330" cy="250" r="30" style="animation-delay:1.4s"/>
+        <g class="sat"><circle cx="150" cy="40" r="6"/><circle cx="290" cy="50" r="6"/><circle cx="40" cy="350" r="6"/><circle cx="40" cy="200" r="6"/><circle cx="380" cy="330" r="6"/><circle cx="390" cy="190" r="6"/><circle cx="210" cy="200" r="9"/><circle cx="200" cy="340" r="6"/><circle cx="150" cy="370" r="6"/></g>
+        <g class="lbl"><text x="210" y="114" text-anchor="middle">Software</text><text x="90" y="274" text-anchor="middle">Research</text><text x="330" y="254" text-anchor="middle">Data</text></g>
+      </svg>
+      <div class="code-win"><div class="cw-bar"><i></i><i></i><i></i><span>sakshi.py</span></div>
+<pre><span class="k">profile</span> = {
+  <span class="s">"role"</span>: <span class="s">"Software Developer"</span>,
+  <span class="s">"published"</span>: <span class="s">"Graph-Theoretic Clustering"</span>,
+  <span class="s">"exploring"</span>: [<span class="s">"Excel"</span>, <span class="s">"Data Analytics"</span>],
+}</pre></div>
+    </div>
+  </div>
+  <div class="ticker" aria-hidden="true"><div class="tk"><span>Python</span><span>Pandas</span><span>NumPy</span><span>SQL</span><span>Excel</span><span>Power BI</span><span>Matplotlib</span><span>NetworkX</span><span>Graph Theory</span><span>Statistical Analysis</span><span>Data Cleaning</span><span>Data Visualization</span><span>Python</span><span>Pandas</span><span>NumPy</span><span>SQL</span><span>Excel</span><span>Power BI</span><span>Matplotlib</span><span>NetworkX</span><span>Graph Theory</span><span>Statistical Analysis</span><span>Data Cleaning</span><span>Data Visualization</span></div></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">ABOUT</div>
+      <h2 class="section-title">Turning Data Into Meaningful Insights</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a Mathematics graduate with a minor in Computer Science, and a research background that shapes the way I approach data — carefully, structurally, and with a genuine curiosity about what the numbers are actually saying.</p>
+        <p>Over the course of my degree, I gravitated toward the parts of mathematics that meet the real world: statistics, graph theory, and computation. That interest naturally extended into <strong>data analysis</strong>, where I enjoy the process of taking messy, unstructured information and turning it into something clear enough to act on.</p>
+        <p>I currently work as a <strong>Software Developer</strong>, and I'm building on that foundation with a growing interest in <strong>Excel and data analytics</strong> — the place where programming, mathematics and clear communication meet.</p>
+        <p>I work comfortably across <strong>Python, SQL and Excel</strong> for analysis, and use <strong>Power BI</strong> and visualization libraries to communicate findings in a way that's easy to understand at a glance. I'm equally drawn to research — reading a problem carefully, forming a hypothesis, and testing it rigorously.</p>
+        <div class="about-tags">
+          <span class="tag">Data Analysis</span>
+          <span class="tag">Research</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Excel</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">Problem Solving</span>
+        </div>
+        <a href="resume.pdf" class="btn btn-secondary btn-small" id="resumeBtn" download>Download Resume (PDF)</a>
+      </div>
+
+      <div class="info-cards reveal">
+        <div class="info-card">
+          <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M4 19V5a1 1 0 011-1h10.5L20 7.5V19a1 1 0 01-1 1H5a1 1 0 01-1-1z" stroke-linejoin="round"/><path d="M9 9h6M9 13h6M9 17h3" stroke-linecap="round"/></svg></div>
+          <div>
+            <h4>Mathematics</h4>
+            <p>A rigorous foundation in statistics, probability and graph theory that underpins every analysis I run.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg></div>
+          <div>
+            <h4>Research</h4>
+            <p>Comfortable forming hypotheses, designing methodology, and presenting findings at academic level.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M4 20V10M12 20V4M20 20v-7" stroke-linecap="round"/></svg></div>
+          <div>
+            <h4>Data Analytics</h4>
+            <p>From cleaning raw datasets to building dashboards that make the story in the data obvious.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">SKILLS</div>
+      <h2 class="section-title">Tools I Use to Work With Data</h2>
+      <p class="section-sub">A practical toolkit built through coursework, research projects and self-driven practice — spanning programming, analysis, visualization and the underlying statistical thinking.</p>
+    </div>
+
+    <div class="bento">
+    <div class="skills-block reveal">
+      <div class="skills-cat-label">SOFTWARE DEVELOPMENT</div>
+      <div class="skill-cards">
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">&lt;/&gt;</div><h4>Software Development</h4></div>
+          <p>Currently working as a Software Developer, building and maintaining software professionally.</p>
+        </div>
+        <div class="skill-card is-placeholder">
+          <div class="skill-top"><div class="skill-icon">+</div><h4>Tech stack</h4></div>
+          <p>[To be added: languages, frameworks and tools used in your role]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-block reveal">
+      <div class="skills-cat-label">PROGRAMMING</div>
+      <div class="skill-cards">
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">Py</div><h4>Python</h4></div>
+          <p>Scripting analysis workflows, working with Pandas and NumPy, and applying it to graph theory and research projects.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-block reveal">
+      <div class="skills-cat-label">DATA ANALYSIS</div>
+      <div class="skill-cards">
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">Pd</div><h4>Pandas</h4></div>
+          <p>Cleaning, reshaping and exploring structured datasets before analysis.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">Np</div><h4>NumPy</h4></div>
+          <p>Numerical computation for statistical and mathematical operations.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">SQL</div><h4>SQL</h4></div>
+          <p>Querying, joining and aggregating relational data for analysis.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">Xl</div><h4>Excel</h4></div>
+          <p>Pivot tables, formulas and structured reporting for business data.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-block reveal">
+      <div class="skills-cat-label">VISUALIZATION</div>
+      <div class="skill-cards">
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">BI</div><h4>Power BI</h4></div>
+          <p>Building interactive dashboards that turn raw tables into readable insight.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">plt</div><h4>Matplotlib</h4></div>
+          <p>Custom charts and plots for exploratory and research-driven analysis.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-block reveal">
+      <div class="skills-cat-label">OTHER</div>
+      <div class="skill-cards">
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">01</div><h4>Data Cleaning</h4></div>
+          <p>Handling missing values, duplicates and inconsistencies before analysis begins.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">◒</div><h4>Data Visualization</h4></div>
+          <p>Choosing the right chart to communicate a finding clearly and honestly.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">σ</div><h4>Statistical Analysis</h4></div>
+          <p>Applying statistical reasoning to validate patterns found in data.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-top"><div class="skill-icon">◉─◉</div><h4>Graph Theory</h4></div>
+          <p>Modeling relationships as networks to uncover structure and communities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">WORK</div>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">A mix of academic research and applied analysis — grounded in real datasets and built to answer specific questions.</p>
+    </div>
+
+    <div class="projects-list">
+      <div class="project-card pc-feature reveal">
+        <div class="project-visual">
+          <svg viewBox="0 0 200 200" fill="none">
+            <circle cx="60" cy="50" r="6" fill="#4F7BFF"/>
+            <circle cx="130" cy="40" r="5" fill="#7FA2FF"/>
+            <circle cx="150" cy="100" r="7" fill="#8B5CF6"/>
+            <circle cx="90" cy="110" r="5" fill="#4F7BFF"/>
+            <circle cx="50" cy="140" r="6" fill="#7FA2FF"/>
+            <circle cx="120" cy="160" r="5" fill="#8B5CF6"/>
+            <g stroke="rgba(130,140,170,0.5)" stroke-width="1.3">
+              <line x1="60" y1="50" x2="130" y2="40"/>
+              <line x1="60" y1="50" x2="90" y2="110"/>
+              <line x1="130" y1="40" x2="150" y2="100"/>
+              <line x1="90" y1="110" x2="150" y2="100"/>
+              <line x1="90" y1="110" x2="50" y2="140"/>
+              <line x1="90" y1="110" x2="120" y2="160"/>
+              <line x1="50" y1="140" x2="120" y2="160"/>
+            </g>
+          </svg>
+        </div>
+        <div class="project-body">
+          <span class="status-pill status-pill--planned">Featured · Published research</span>
+          <h3>A Graph-Theoretic Clustering Approach to Social Network Analysis</h3>
+          <div class="tag-row">
+            <span class="tag-badge">Python</span>
+            <span class="tag-badge">Pandas</span>
+            <span class="tag-badge">NetworkX</span>
+            <span class="tag-badge">Matplotlib</span>
+            <span class="tag-badge">Graph Theory</span>
+          </div>
+          <p>An academic research project applying graph theory and community detection techniques to analyze professional social network data.</p>
+          <p class="pdetail">148 anonymized profiles · Louvain &amp; Girvan–Newman · 6 Louvain communities</p>
+          <div class="project-actions">
+            <a href="#research" class="link-btn">View Research</a>
+            <a href="https://github.com/sakshitripathi01" class="link-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card pc-feature report-card-project reveal">
+        <div class="project-visual">
+          <svg viewBox="0 0 200 200" fill="none">
+            <rect x="30" y="40" width="140" height="120" rx="6" stroke="rgba(130,140,170,0.5)" stroke-width="1.3"/>
+            <line x1="30" y1="70" x2="170" y2="70" stroke="rgba(130,140,170,0.5)"/>
+            <line x1="30" y1="100" x2="170" y2="100" stroke="rgba(130,140,170,0.5)"/>
+            <line x1="30" y1="130" x2="170" y2="130" stroke="rgba(130,140,170,0.5)"/>
+            <line x1="75" y1="40" x2="75" y2="160" stroke="rgba(130,140,170,0.5)"/>
+            <line x1="125" y1="40" x2="125" y2="160" stroke="rgba(130,140,170,0.5)"/>
+            <rect x="30" y="40" width="45" height="30" fill="#4F7BFF" opacity="0.4"/>
+            <rect x="125" y="100" width="45" height="30" fill="#7FA2FF" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <span class="status-pill">Excel · Data Analysis</span>
+          <h3>Student Report Card Analysis</h3>
+          <div class="tag-row">
+            <span class="tag-badge">Excel</span>
+            <span class="tag-badge">Pivot Tables</span>
+            <span class="tag-badge">Data Analysis</span>
+          </div>
+          <p>A structured Excel project that organizes student report-card records and makes academic results easier to review. The workbook supports a clearer view of student performance through tabular data and summary-based analysis.</p>
+          <p class="pdetail">Student performance data · Excel workbook · Organized academic results</p>
+          <div class="project-actions">
+            <a href="student-report-card-analysis.xlsx" class="link-btn" download>Download Excel File</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESEARCH ============ -->
+<section id="research" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">RESEARCH</div>
+      <h2 class="section-title">Research &amp; Publications</h2>
+      <p class="section-sub">A closer look at my primary research project — applying network science to understand structure in professional social data.</p>
+    </div>
+
+    <div class="pub2 reveal">
+      <div class="pub-main">
+        <div class="pub-badge">Published Research</div>
+        <h3 class="pub-title">Sakshi Tripathi — Graph-Theoretic Clustering</h3>
+        <p class="pub-proj">Project: A Graph-Theoretic Clustering Approach to Social Network Analysis</p>
+        <p class="pub-abs">This research applies graph theory and community detection techniques to analyze professional social network data — 148 anonymized professional profiles modeled as a network and clustered with the Louvain and Girvan–Newman algorithms.</p>
+        <div class="btn-row"><button class="btn btn-primary btn-small" id="openResearchModal2" type="button">View Research Details</button><a href="#" class="link-btn" data-placeholder="Publication link">View Publication</a></div>
+      </div>
+      <dl class="pub-meta">
+        <div><dt>Author</dt><dd>Sakshi Tripathi</dd></div>
+        <div class="is-placeholder"><dt>Journal / Conference</dt><dd class="ph">[To be added]</dd></div>
+        <div class="is-placeholder"><dt>Publication date</dt><dd class="ph">[To be added]</dd></div>
+        <div class="is-placeholder"><dt>Co-authors</dt><dd class="ph">[To be added]</dd></div>
+        <div class="is-placeholder"><dt>DOI</dt><dd class="ph">[To be added]</dd></div>
+        <div class="is-placeholder"><dt>Publication URL</dt><dd class="ph">[To be added]</dd></div>
+      </dl>
+    </div>
+
+    <div class="research-panel reveal">
+      <div>
+        <h3>A Graph-Theoretic Clustering Approach to Social Network Analysis</h3>
+
+        <div class="research-meta">
+          <div class="research-meta-row"><b>Dataset</b><span>148 anonymized professional profiles</span></div>
+        </div>
+
+        <div class="method-tags">
+          <span class="tag">Graph Construction</span>
+          <span class="tag">Community Detection</span>
+          <span class="tag">Louvain Algorithm</span>
+          <span class="tag">Girvan–Newman Algorithm</span>
+          <span class="tag">Network Analysis</span>
+          <span class="tag">Data Visualization</span>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card"><span class="stat-num">148</span><span class="stat-label">Profiles analyzed</span></div>
+          <div class="stat-card"><span class="stat-num">6</span><span class="stat-label">Louvain communities</span></div>
+          <div class="stat-card"><span class="stat-num">0.508</span><span class="stat-label">Louvain modularity</span></div>
+          <div class="stat-card"><span class="stat-num">0.4</span><span class="stat-label">Avg. clustering coefficient</span></div>
+          <div class="stat-card"><span class="stat-num">7</span><span class="stat-label">Network diameter</span></div>
+        </div>
+
+        <p class="research-note">The Girvan–Newman algorithm was also applied for comparison — its best-performing level produced 5 communities.</p>
+
+        <button class="btn btn-primary btn-small" id="openResearchModal">View Research Details</button>
+      </div>
+
+      <div class="graph-visual" aria-hidden="true">
+        <svg viewBox="0 0 320 320" fill="none">
+          <!-- community 1 -->
+          <g stroke="rgba(79,123,255,0.45)" stroke-width="1.2">
+            <line x1="60" y1="60" x2="100" y2="90"/>
+            <line x1="60" y1="60" x2="40" y2="110"/>
+            <line x1="100" y1="90" x2="40" y2="110"/>
+            <line x1="100" y1="90" x2="80" y2="140"/>
+          </g>
+          <circle cx="60" cy="60" r="8" fill="#4F7BFF"/>
+          <circle cx="100" cy="90" r="6" fill="#4F7BFF"/>
+          <circle cx="40" cy="110" r="6" fill="#4F7BFF"/>
+          <circle cx="80" cy="140" r="5" fill="#4F7BFF"/>
+
+          <!-- community 2 -->
+          <g stroke="rgba(127,162,255,0.45)" stroke-width="1.2">
+            <line x1="230" y1="60" x2="260" y2="100"/>
+            <line x1="230" y1="60" x2="270" y2="50"/>
+            <line x1="260" y1="100" x2="270" y2="50"/>
+            <line x1="260" y1="100" x2="240" y2="140"/>
+          </g>
+          <circle cx="230" cy="60" r="7" fill="#7FA2FF"/>
+          <circle cx="260" cy="100" r="6" fill="#7FA2FF"/>
+          <circle cx="270" cy="50" r="5" fill="#7FA2FF"/>
+          <circle cx="240" cy="140" r="5" fill="#7FA2FF"/>
+
+          <!-- community 3 -->
+          <g stroke="rgba(139,92,246,0.45)" stroke-width="1.2">
+            <line x1="140" y1="220" x2="180" y2="240"/>
+            <line x1="140" y1="220" x2="120" y2="260"/>
+            <line x1="180" y1="240" x2="190" y2="280"/>
+            <line x1="120" y1="260" x2="150" y2="290"/>
+            <line x1="180" y1="240" x2="150" y2="290"/>
+          </g>
+          <circle cx="140" cy="220" r="7" fill="#8B5CF6"/>
+          <circle cx="180" cy="240" r="6" fill="#8B5CF6"/>
+          <circle cx="120" cy="260" r="5" fill="#8B5CF6"/>
+          <circle cx="190" cy="280" r="5" fill="#8B5CF6"/>
+          <circle cx="150" cy="290" r="6" fill="#8B5CF6"/>
+
+          <!-- bridges between communities -->
+          <g stroke="rgba(150,158,180,0.35)" stroke-width="1" stroke-dasharray="3 4">
+            <line x1="80" y1="140" x2="140" y2="220"/>
+            <line x1="240" y1="140" x2="180" y2="240"/>
+            <line x1="100" y1="90" x2="230" y2="60"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Research Modal -->
+<div class="modal-overlay" id="researchModal">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="closeResearchModal" aria-label="Close">✕</button>
+    <h3 id="modalTitle">A Graph-Theoretic Clustering Approach to Social Network Analysis</h3>
+
+    <div class="modal-section">
+      <h5>OBJECTIVE</h5>
+      <p>To model a professional social network as a graph and apply community detection techniques to uncover meaningful clusters of closely connected individuals.</p>
+    </div>
+
+    <div class="modal-section">
+      <h5>DATASET</h5>
+      <p>148 anonymized professional profiles.</p>
+    </div>
+
+    <div class="modal-section">
+      <h5>METHODOLOGY</h5>
+      <ul>
+        <li>Modeled the professional profiles as a network graph</li>
+        <li>Computed structural metrics: clustering coefficient and network diameter</li>
+        <li>Applied the Louvain algorithm for community detection</li>
+        <li>Applied the Girvan–Newman algorithm for comparison across hierarchical levels</li>
+        <li>Visualized resulting communities using Matplotlib and NetworkX</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h5>ALGORITHMS</h5>
+      <p>Louvain (modularity optimization) and Girvan–Newman (edge-betweenness based divisive clustering) were used to detect community structure and compare the results.</p>
+    </div>
+
+    <div class="modal-section">
+      <h5>RESULTS</h5>
+      <ul>
+        <li>Louvain algorithm identified 6 distinct communities with a modularity score of 0.508</li>
+        <li>Average clustering coefficient of 0.4</li>
+        <li>Network diameter of 7</li>
+        <li>Girvan–Newman's best-performing level produced 5 communities</li>
+      </ul>
+    </div>
+
+    <div class="modal-section">
+      <h5>KEY FINDINGS</h5>
+      <p>Louvain detected 6 communities (modularity 0.508); the best Girvan–Newman level produced 5. Average clustering coefficient: 0.4. Network diameter: 7.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">EXPERIENCE</div>
+      <h2 class="section-title">Professional Experience</h2>
+      <p class="section-sub">Where I'm applying my mathematics and programming background today.</p>
+    </div>
+
+    <div class="tl reveal">
+      <div class="tl-now" aria-hidden="true">Now</div>
+      <div class="tl-body">
+        <span class="status-pill status-pill--current">Currently Working</span>
+        <h3>Software Developer</h3>
+        <div class="tl-meta"><span>SocialBuzz Technologies</span><span>10 September 2026 – Present</span></div>
+        <ul class="exp-points"><li>Working as a Software Developer on software-related tasks and ongoing project work.</li><li>Applying analytical thinking and structured problem-solving in a professional development environment.</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section id="achievements">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">BEYOND ACADEMICS</div>
+      <h2 class="section-title">Achievements &amp; Activities</h2>
+      <p class="section-sub">Leadership, community involvement and initiative outside the classroom.</p>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <h4>Campus Ambassador — E-Cell IIT Bombay</h4>
+        <p>Represented E-Cell IIT Bombay on campus, driving awareness of entrepreneurship initiatives and encouraging peer participation in national-level events.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <h4>NSS Member</h4>
+        <p>Contributed to community service and outreach programs as part of the National Service Scheme, engaging in social responsibility initiatives.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <h4>Youth Parliament</h4>
+        <p>Participated in structured debate and policy discussion, building skills in public speaking, argumentation and civic awareness.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <h4>IIC Innovation Team</h4>
+        <p>Collaborated with the Institution's Innovation Council on initiatives promoting innovation and entrepreneurial thinking among students.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <h4>International Conference Presentation</h4>
+        <p>Presented research findings at an international academic conference, communicating methodology and results to a peer and expert audience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="alt">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="kicker">EDUCATION</div>
+      <h2 class="section-title">Academic Background</h2>
+    </div>
+
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <h3>B.Sc. (Hons.) Mathematics with Research</h3>
+        <div class="minor">Minor in Computer Science</div>
+        <div class="edu-university">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M5 10.5V16c0 1 3 3 7 3s7-2 7-3v-5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          University of Delhi
+        </div>
+      </div>
+
+      <div class="math-visual" aria-hidden="true">
+        <svg viewBox="0 0 240 240" fill="none">
+          <circle cx="120" cy="120" r="90" stroke="rgba(130,140,170,0.35)" stroke-dasharray="2 5"/>
+          <path d="M30 150 Q 80 40 120 120 T 210 90" stroke="url(#eduGrad)" stroke-width="2" fill="none"/>
+          <defs>
+            <linearGradient id="eduGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#4F7BFF"/>
+              <stop offset="100%" stop-color="#8B5CF6"/>
+            </linearGradient>
+          </defs>
+          <circle cx="30" cy="150" r="4" fill="#4F7BFF"/>
+          <circle cx="120" cy="120" r="4" fill="#7FA2FF"/>
+          <circle cx="210" cy="90" r="4" fill="#8B5CF6"/>
+          <text x="120" y="200" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="var(--text-muted)">Σ f(x) dx</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="kicker">CONTACT</div>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-sub" style="margin-bottom:0;">Open to internships, entry-level analyst roles, research opportunities and meaningful projects.</p>
+
+        <div class="contact-channels">
+          <a href="mailto:st6481871@gmail.com" class="channel">
+            <div class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M4 5h16v14H4z"/><path d="M4 6l8 7 8-7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="channel-text"><div class="label">Email</div><div class="value">st6481871@gmail.com</div></div>
+          </a>
+          <a href="https://www.linkedin.com/in/sakshi-tripathi-258b64271/" class="channel" target="_blank" rel="noopener noreferrer">
+            <div class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 014 0V17M11 12.5v4.5" stroke-linecap="round"/></svg></div>
+            <div class="channel-text"><div class="label">LinkedIn</div><div class="value">linkedin.com/in/sakshi-tripathi-258b64271</div></div>
+          </a>
+          <a href="https://github.com/sakshitripathi01" class="channel" target="_blank" rel="noopener noreferrer">
+            <div class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.7 2.8 5.6 3.1 5.6 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div class="channel-text"><div class="label">GitHub</div><div class="value">github.com/sakshitripathi01</div></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="contactForm" action="https://formsubmit.co/ajax/st6481871@gmail.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New Portfolio Contact Message — Sakshi Tripathi">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+          <div class="field" id="nameField">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" name="name" placeholder="Your full name" required>
+            <div class="field-error">Please enter your name.</div>
+          </div>
+          <div class="field" id="emailField">
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" name="email" placeholder="you@example.com" required>
+            <div class="field-error">Please enter a valid email address.</div>
+          </div>
+          <div class="field" id="messageField">
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" name="message" placeholder="Tell me a little about the opportunity or project..." required></textarea>
+            <div class="field-error">Please write a short message.</div>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          <div class="success-msg" id="successMsg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Your message has been sent successfully. I will get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-about">
+        <div class="footer-brand">Sakshi — Software Developer, Data &amp; Research Enthusiast</div>
+        <p>Mathematics graduate working in software, with published graph-theory research and a growing focus on Excel and data analytics.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/sakshi-tripathi-258b64271/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/sakshitripathi01" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#" data-placeholder="Email address">Email</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Sakshi. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
